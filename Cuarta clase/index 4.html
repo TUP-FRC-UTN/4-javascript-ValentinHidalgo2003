@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="parrafo1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta sit
+        dolore nemo quisquam odio voluptatem doloribus facere, ipsam dolorum at
+        eius consectetur iusto eos quis numquam? Fuga, pariatur ipsa?
+      </p>
+  <label for="txtDate">año</label> <br>
+  <input type="text" name="txtDate" id="txtDate">
+
+    </div>
+    <script>
+                                    //  SE PUEDE USAR UNO U OTRO, HACEN LO MISMO
+      document.addEventListener("DOMContentLoaded", inicializarFecha());
+
+
+   function inicializarFecha(){
+     var year = new Date().getFullYear();
+     document.getElementById("txtDate").value = year;
+   }
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="txtDate">año</label> <br />
+      <input type="text" name="txtDate" id="txtDate" />
+      <button id="btnCargarFecha">Cargar</button>
+    </div>
+    <script>
+      // document.addEventListener("DOMConentloaded",incializarBoton)
+      document.getElementById("btnCargarFecha").addEventListener("click", inicializarFecha());
+      // document.addEventListener("DOMContentLoaded", inicializarFecha());
+
+function inicializarBoton(){
+document.getElementById("btnCargarFecha").addEventListener("click",inicializarFecha());
+}
+
+      function inicializarFecha() {
+        var year = new Date().getFullYear();
+        document.getElementById("txtDate").value = year;
+      }
+    </script>
+  </body>
+</html>
